@@ -1,0 +1,490 @@
+/* STALKER/Metro 2033 Theme Styles */
+
+/* Main container fix */
+#root {
+  position: relative;
+  z-index: 10;
+}
+
+/* Navbar toggler */
+.navbar-toggler {
+  border: 1px solid #00ff00;
+  padding: 0.25rem 0.5rem;
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+}
+
+/* Terminal text effect */
+.terminal-text {
+  font-family: 'Share Tech Mono', monospace;
+  color: #00ff00;
+  text-shadow: 0 0 5px #00ff00;
+}
+
+/* Navbar in terminal style */
+.navbar-custom {
+  background: rgba(0, 0, 0, 0.95);
+  border-bottom: 2px solid #00ff00;
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+  backdrop-filter: none;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+  color: #00ff00 !important;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+  text-shadow: 0 0 5px #00ff00;
+}
+
+.navbar-custom .nav-link:hover {
+  color: #00ff00 !important;
+  text-shadow: 
+    0 0 10px #00ff00,
+    0 0 20px #00ff00,
+    0 0 30px #00ff00;
+  background: rgba(0, 255, 0, 0.1);
+}
+
+/* Modal styling */
+.modal-content {
+  background: rgba(10, 10, 10, 0.95);
+  border: 2px solid #00ff00;
+  color: #00ff00;
+  box-shadow: 
+    0 0 30px rgba(0, 255, 0, 0.5),
+    inset 0 0 30px rgba(0, 255, 0, 0.1);
+}
+
+.modal-header {
+  border-bottom: 1px solid #00ff00;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.modal-footer {
+  border-top: 1px solid #00ff00;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.btn-close {
+  filter: invert(1) hue-rotate(90deg);
+  opacity: 0.8;
+}
+
+.btn-close:hover {
+  opacity: 1;
+}
+
+/* Form controls */
+.form-control,
+.form-select {
+  background: rgba(0, 0, 0, 0.8);
+  border: 1px solid #00ff00;
+  color: #00ff00;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.form-control:focus,
+.form-select:focus {
+  background: rgba(0, 0, 0, 0.9);
+  border-color: #00ff00;
+  color: #00ff00;
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+}
+
+.form-control::placeholder {
+  color: rgba(0, 255, 0, 0.5);
+}
+
+/* Buttons */
+.btn {
+  font-family: 'Share Tech Mono', monospace;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.btn-gradient {
+  background: transparent;
+  border: 2px solid #00ff00;
+  color: #00ff00;
+  text-shadow: 0 0 5px #00ff00;
+}
+
+.btn-gradient:hover {
+  background: rgba(0, 255, 0, 0.1);
+  border-color: #00ff00;
+  color: #00ff00;
+  box-shadow: 
+    0 0 20px rgba(0, 255, 0, 0.5),
+    inset 0 0 20px rgba(0, 255, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.btn-gradient:active {
+  transform: translateY(0);
+}
+
+.btn-light {
+  background: rgba(0, 255, 0, 0.1);
+  border: 1px solid #00ff00;
+  color: #00ff00;
+}
+
+.btn-light:hover {
+  background: rgba(0, 255, 0, 0.2);
+  border-color: #00ff00;
+  color: #00ff00;
+}
+
+.btn-secondary {
+  background: rgba(255, 165, 0, 0.1);
+  border: 1px solid #ff6600;
+  color: #ff6600;
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 165, 0, 0.2);
+  border-color: #ff6600;
+  color: #ff6600;
+  box-shadow: 0 0 15px rgba(255, 165, 0, 0.5);
+}
+
+/* Cards */
+.card {
+  background: rgba(10, 10, 10, 0.9);
+  border: 1px solid #00ff00;
+  color: #00ff00;
+}
+
+.card-header {
+  background: rgba(0, 0, 0, 0.8);
+  border-bottom: 1px solid #00ff00;
+  color: #00ff00;
+}
+
+.card-footer {
+  background: rgba(0, 0, 0, 0.8);
+  border-top: 1px solid #00ff00;
+}
+
+/* Badge styling */
+.badge {
+  font-family: 'Share Tech Mono', monospace;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.bg-primary {
+  background-color: rgba(0, 255, 0, 0.2) !important;
+  color: #00ff00 !important;
+  border: 1px solid #00ff00;
+}
+
+.bg-secondary {
+  background-color: rgba(255, 165, 0, 0.2) !important;
+  color: #ff6600 !important;
+  border: 1px solid #ff6600;
+}
+
+.bg-info {
+  background-color: rgba(0, 255, 255, 0.2) !important;
+  color: #00ffff !important;
+  border: 1px solid #00ffff;
+}
+
+/* Alert styling */
+.alert {
+  background: rgba(10, 10, 10, 0.9);
+  border: 1px solid;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.alert-danger {
+  border-color: #ff0000;
+  color: #ff0000;
+  background: rgba(255, 0, 0, 0.1);
+}
+
+/* Input group */
+.input-group-text {
+  background: rgba(0, 0, 0, 0.8);
+  border: 1px solid #00ff00;
+  color: #00ff00;
+}
+
+/* Invalid feedback */
+.invalid-feedback {
+  color: #ff0000;
+  text-shadow: 0 0 5px #ff0000;
+}
+
+.is-invalid {
+  border-color: #ff0000 !important;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+}
+
+/* Quiz specific */
+.quiz-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.quiz-progress {
+  height: 8px;
+  border-radius: 0;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.8);
+  border: 1px solid #00ff00;
+}
+
+.quiz-progress-bar {
+  height: 100%;
+  background: #00ff00;
+  box-shadow: 0 0 10px #00ff00;
+  transition: width 0.3s ease;
+}
+
+/* List group */
+.list-group-item {
+  background: rgba(10, 10, 10, 0.8);
+  border: 1px solid #00ff00;
+  color: #00ff00;
+}
+
+.list-group-item:hover {
+  background: rgba(0, 255, 0, 0.1);
+}
+
+/* Form check */
+.form-check-input {
+  background-color: transparent;
+  border: 2px solid #00ff00;
+}
+
+.form-check-input:checked {
+  background-color: #00ff00;
+  border-color: #00ff00;
+}
+
+.form-switch .form-check-input {
+  background-image: none;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 2px solid #00ff00;
+}
+
+.form-switch .form-check-input:checked {
+  background-color: #00ff00;
+  border-color: #00ff00;
+}
+
+.form-switch .form-check-input:focus {
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+}
+
+.form-check-label {
+  color: #00ff00;
+}
+
+/* Toast notifications */
+.toast-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1050;
+}
+
+.toast {
+  background: rgba(10, 10, 10, 0.95);
+  border: 2px solid;
+  font-family: 'Share Tech Mono', monospace;
+  color: #00ff00;
+}
+
+.toast-success {
+  border-color: #00ff00;
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+}
+
+.toast-error {
+  border-color: #ff0000;
+  color: #ff0000;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+}
+
+/* Links */
+a {
+  color: #00ff00;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00ff00;
+  text-shadow: 0 0 10px #00ff00;
+  text-decoration: underline;
+}
+
+/* Spinner modifications */
+.spinner-border {
+  border-color: rgba(0, 255, 0, 0.3);
+  border-right-color: #00ff00;
+}
+
+/* Text colors */
+.text-white {
+  color: #00ff00 !important;
+}
+
+.text-muted {
+  color: rgba(0, 255, 0, 0.6) !important;
+}
+
+/* Special effects */
+.bg-light {
+  background-color: rgba(0, 255, 0, 0.05) !important;
+  border: 1px solid rgba(0, 255, 0, 0.2);
+  color: #00ff00 !important;
+}
+
+.lead {
+  color: #00ff00;
+  text-shadow: 0 0 3px #00ff00;
+}
+
+/* Glitch effect for headers */
+h1, h2, h3, h4, h5, h6 {
+  color: #00ff00;
+  text-shadow: 
+    0 0 10px #00ff00,
+    0 0 20px #00ff00;
+  position: relative;
+}
+
+/* Terminal boot sequence */
+@keyframes boot {
+  0% {
+    opacity: 0;
+    transform: scaleY(0);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scaleY(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
+
+.slide-in {
+  animation: boot 0.3s ease-out;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .fact-card {
+    margin-bottom: 20px;
+  }
+  
+  .navbar-custom {
+    padding: 0.5rem 1rem;
+  }
+  
+  body::before,
+  body::after {
+    display: none; /* Disable heavy effects on mobile */
+  }
+}
+
+/* Hover effect for interactive elements */
+button:not([disabled]):hover,
+.clickable:hover {
+  cursor: pointer;
+  filter: brightness(1.2);
+}
+
+/* Button pulse effect */
+.btn:not([disabled]):hover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 255, 0, 0.3);
+  animation: pulse 0.5s ease-out;
+  pointer-events: none;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.05);
+    opacity: 0;
+  }
+}
+
+/* Disabled state */
+[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed !important;
+}
+
+/* Selection color */
+::selection {
+  background: #00ff00;
+  color: #000000;
+}
+
+::-moz-selection {
+  background: #00ff00;
+  color: #000000;
+}
+
+/* Radiation symbol animation */
+.radiation-symbol {
+  display: inline-block;
+  animation: radiation 4s ease-in-out infinite;
+  color: #ff6600;
+  text-shadow: 0 0 10px #ff6600;
+}
+
+@keyframes radiation {
+  0%, 100% { 
+    transform: rotate(0deg) scale(1);
+    opacity: 0.8;
+  }
+  50% { 
+    transform: rotate(180deg) scale(1.1);
+    opacity: 1;
+  }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 10px;
+  background: #000000;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+  border: 1px solid #00ff00;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00ff00;
+  border: 1px solid #000000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00cc00;
+  box-shadow: 0 0 10px #00ff00;
+}
