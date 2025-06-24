@@ -1,16 +1,16 @@
-# Facts Frontend
+# Random Usless Facts
 
 React SPA з мікросервісною архітектурою. S.T.A.L.K.E.R. тематика.
 
 ## Реалізовано
 
-JSON API через Express proxy
-React компоненти (client-side rendering)
-Детальний перегляд кожного факту
-Форма входу
-AJAX автооновлення кожні 30 сек
-Вікторина з radio/select елементами
-Bootstrap 5 для UI
+- JSON API через Express proxy
+- React компоненти (client-side rendering)
+- Детальний перегляд кожного факту
+- Форма входу
+- AJAX автооновлення кожні 30 сек
+- Вікторина з radio/select елементами
+- Bootstrap 5 для UI
 
 ## Характеристики
 
